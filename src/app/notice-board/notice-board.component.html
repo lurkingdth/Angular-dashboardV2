@@ -1,0 +1,72 @@
+<!-- Grid Notice Cards -->
+<div style="background-color: rgb(26, 24, 24);">
+  <div class="row">
+    <div class="col-sm m-3">
+      <div class="card" style="height: 22rem">
+        <div class="card-header bg-dark text-white">Notice Board 1</div>
+        <marquee
+          direction="up"
+          onmouseover="this.stop()"
+          onmouseleave="this.start()"
+        >
+          <ul class="list-group list-group-flush">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" *ngFor="let item of myData$ | async">
+                <a
+                  href="{{ item.website_url }}"
+                  target="_blank"
+                  style="text-decoration: none"
+                >
+                  {{ item.id }}
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </marquee>
+      </div>
+    </div>
+    <div class="col-sm m-3">
+      <div class="card" style="height: 22rem">
+        <div class="card-header">Notice Board 2</div>
+        <marquee
+          direction="up"
+          onmouseover="this.stop()"
+          onmouseleave="this.start()"
+        >
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let item of myData$ | async">
+              <a
+                href="{{ item.website_url }}"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                {{ item.id }}
+              </a>
+            </li>
+          </ul>
+        </marquee>
+      </div>
+    </div>
+    <div class="col-sm m-3">
+      <div class="card" style="height: 22rem">
+        <div class="card-header">Notice Board 3</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm m-3">
+      <div class="card" style="height: 22rem">
+        <div class="card-header">Notice Board 4</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Grid Notice Cards -->

@@ -1,0 +1,24 @@
+body {
+    background: rgb(238, 238, 238);
+  }
+  .news {
+    width: 160px;
+  }
+  .news-scroll a {
+    text-decoration: none;
+  }
+  .dot {
+    height: 6px;
+    width: 6px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 2px !important;
+    background-color: rgb(126, 42, 42);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .news-scroll a{
+      color: white;
+  }
+  
